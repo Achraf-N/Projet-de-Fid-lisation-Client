@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import styles from "./GestionSystem.module.css";
 import { Table } from "../Components/Table";
 import { Modals } from "../Components/Modals";
-import User from "../components/User";
 
 function GestionSystem() {
   const [modalOpen, setModalOpen] = useState(false);
@@ -59,29 +58,22 @@ function GestionSystem() {
   };
 
   return (
-    <>
-      <User />
-      <div className={styles.GestionSystem}>
-        <Table
-          rows={rows}
-          deleteRow={handleDeleteRow}
-          editRow={handleEditRow}
+    <div className={styles.GestionSystem}>
+      <Table rows={rows} deleteRow={handleDeleteRow} editRow={handleEditRow} />
+      <button onClick={() => setModalOpen(true)} className={styles.btn}>
+        Add
+      </button>
+      {modalOpen && (
+        <Modals
+          closeModal={() => {
+            setModalOpen(false);
+            setRowToEdit(null);
+          }}
+          onSubmit={handleSubmit}
+          defaultValue={rowToEdit !== null && rows[rowToEdit]}
         />
-        <button onClick={() => setModalOpen(true)} className={styles.btn}>
-          Add
-        </button>
-        {modalOpen && (
-          <Modals
-            closeModal={() => {
-              setModalOpen(false);
-              setRowToEdit(null);
-            }}
-            onSubmit={handleSubmit}
-            defaultValue={rowToEdit !== null && rows[rowToEdit]}
-          />
-        )}
-      </div>
-    </>
+      )}
+    </div>
   );
 }
 
