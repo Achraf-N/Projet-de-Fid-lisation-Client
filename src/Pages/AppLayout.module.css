@@ -5,3 +5,14 @@
   display: flex;
   position: relative;
 }
+
+@media (max-width: 768px) {
+  .app {
+    height: 100vh;
+    padding: 1.6rem; /* Reduced padding for smaller screens */
+    display: flex;
+    flex-direction: column; /* Adjusted layout for better stacking on mobile */
+    overscroll-behavior-y: contain; /* Improved scrolling behavior */
+    position: relative;
+  }
+}

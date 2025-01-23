@@ -156,20 +156,83 @@ main {
 }
 
 @media (max-width: 768px) {
-  .product {
-    padding: 1.5rem;
+  :root {
+    --color-primary: #2980b9; /* Slightly darker blue for better contrast on small screens */
+    --color-secondary: #27ae60; /* Slightly darker green */
+    --color-background: #f7f9fa; /* Softer background for reduced eye strain */
   }
 
-  button {
-    padding: 0.8rem;
-    font-size: 1rem;
+  .app {
+    grid-template-columns: 1fr; /* Single-column layout for small screens */
+    column-gap: 2rem; /* Reduce spacing between sections */
+    row-gap: 2rem; /* Add spacing between rows */
+    padding: 1rem;
+  }
+
+  .product {
+    padding: 1.5rem;
+    max-width: 100%; /* Allow full width on mobile screens */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Slightly lighter shadow */
+  }
+
+  .product span {
+    font-size: 1.8rem; /* Reduce font size */
+  }
+
+  .try img {
+    width: 100%; /* Ensure images fit the screen width */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .try li {
+    grid-template-columns: 3rem 1fr; /* Adjust grid size for smaller screens */
+    padding: 1rem 1.5rem; /* Reduce padding */
+    font-size: 1.4rem;
   }
 
   .header {
-    font-size: 1.5rem;
+    font-size: 1.6rem; /* Smaller headers for mobile */
+    margin-bottom: 1rem;
+  }
+
+  .card {
+    padding: 1rem;
+    margin-top: 1rem;
+  }
+
+  .card button {
+    padding: 0.6rem 1rem; /* Smaller buttons */
+    font-size: 1rem;
   }
 
   .message {
+    font-size: 1rem; /* Reduce message font size */
+    margin-top: 0.8rem;
+  }
+
+  .error {
+    font-size: 0.9rem;
+    margin-top: 0.8rem;
+  }
+
+  .product-card {
+    padding: 1rem;
+    margin-top: 1rem;
+  }
+
+  .product-card h2 {
+    font-size: 1.3rem; /* Adjust title size */
+  }
+
+  .product-card p {
     font-size: 1rem;
+  }
+
+  .product-card li {
+    font-size: 0.9rem; /* Reduce font size for list items */
+  }
+
+  main {
+    padding: 0.5rem; /* Add some padding for better alignment */
   }
 }

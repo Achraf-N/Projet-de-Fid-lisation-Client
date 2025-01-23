@@ -319,3 +319,70 @@ body {
   flex-direction: column;
   gap: 2.4rem;
 }
+@media (max-width: 768px) {
+  :root {
+    /* Ensure colors remain accessible and optimized for smaller screens */
+    --color-primary: #6741d9;
+    --color-background-900: #1c1e21;
+    --color-text: #dee2e6;
+  }
+
+  .productPage {
+    padding: 1.6rem; /* Reduced padding for better mobile fit */
+  }
+
+  .productPage .nav-bar {
+    grid-template-columns: 1fr 1fr; /* Simplify layout for smaller screens */
+    padding: 0 1.6rem; /* Reduced padding */
+    height: 6rem; /* Slightly smaller nav bar */
+  }
+
+  .productPage .main {
+    flex-direction: column; /* Stacks items vertically */
+    gap: 1.6rem; /* Reduced gap */
+    height: auto; /* Allow dynamic height */
+  }
+
+  .productPage .box {
+    width: 100%; /* Ensure box takes full width */
+    max-width: 100%; /* Prevent overflow */
+    padding: 1.6rem; /* Add padding for readability */
+  }
+
+  .productPage .list li {
+    padding: 1.2rem 1.6rem; /* Smaller padding for better fit */
+    font-size: 1.4rem; /* Adjusted text size */
+  }
+
+  .productPage .list img {
+    width: 80%; /* Reduce image size */
+    margin: 0 auto; /* Center images */
+  }
+
+  .productPage .btnback {
+    top: 0.4rem;
+    left: 0.4rem;
+    height: 2.8rem; /* Smaller button */
+    font-size: 2rem; /* Adjust text size */
+  }
+
+  .productPage .detailsoverview {
+    padding: 1.6rem; /* Reduced padding */
+    gap: 1rem; /* Smaller gap */
+  }
+
+  .productPage .detailsoverview h2 {
+    font-size: 2rem; /* Adjust headline size */
+  }
+
+  .productPage .rating {
+    padding: 1.6rem; /* Reduced padding */
+    gap: 1.6rem; /* Smaller gap */
+  }
+
+  .productPage .search {
+    width: 100%; /* Full width for mobile screens */
+    font-size: 1.6rem; /* Adjust font size */
+    padding: 0.8rem 1.2rem; /* Adjust padding */
+  }
+}

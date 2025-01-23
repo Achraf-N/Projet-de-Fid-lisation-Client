@@ -32,3 +32,30 @@
   color: var(--color-light--1);
   margin-bottom: 2.5rem;
 }
+
+@media (max-width: 768px) {
+  .homepage {
+    height: calc(100vh - 5rem);
+    margin: 1.5rem;
+    padding: 2rem;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .homepage section {
+    height: auto; /* Adjust height for smaller screens */
+    gap: 2rem;
+    text-align: center;
+  }
+
+  .homepage h1 {
+    font-size: 3rem; /* Smaller font size for mobile */
+    line-height: 1.2;
+  }
+
+  .homepage h2 {
+    width: 100%; /* Full width for better readability */
+    font-size: 1.6rem; /* Adjust font size for smaller screens */
+    margin-bottom: 2rem;
+  }
+}
