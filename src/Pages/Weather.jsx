@@ -258,7 +258,7 @@ function WeatherDetails({
 
       fetchWeather();
     },
-    [lat, lng]
+    [lat, lng, setWeatherData]
   );
 
   return (
