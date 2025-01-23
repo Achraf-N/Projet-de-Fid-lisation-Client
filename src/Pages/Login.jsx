@@ -19,7 +19,7 @@ export default function Login() {
     await LoginFunction(password);
     const token = localStorage.getItem("token");
 
-    const userResponse = await fetch(`http://192.168.1.115:5296/user`, {
+    const userResponse = await fetch(`http://localhost:5296/user`, {
       method: "GET",
       headers: {
         Authorization: `Bearer ${token}`,
