@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import styles from "./GestionSystem.module.css";
 import { Table } from "../Components/Table";
-import { Modal } from "../components/Modal";
+import { Modal } from "../Components/Modals";
 import User from "../components/User";
 
 function GestionSystem() {

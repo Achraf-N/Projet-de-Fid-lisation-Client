@@ -2,7 +2,7 @@ import styles from "./Modal.module.css";
 import { useState } from "react";
 import PropTypes from "prop-types";
 
-export const Modal = ({ closeModal, onSubmit, defaultValue }) => {
+export const Modals = ({ closeModal, onSubmit, defaultValue }) => {
   const [formState, setFormState] = useState(
     defaultValue || {
       reviewID: "",
@@ -141,7 +141,7 @@ export const Modal = ({ closeModal, onSubmit, defaultValue }) => {
   );
 };
 
-Modal.propTypes = {
+Modals.propTypes = {
   closeModal: PropTypes.func.isRequired,
   onSubmit: PropTypes.func.isRequired,
   defaultValue: PropTypes.shape({
