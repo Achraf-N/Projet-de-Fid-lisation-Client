@@ -24,3 +24,21 @@
   flex-direction: column;
   gap: 0.5rem;
 }
+@media (max-width: 768px) {
+  .login {
+    margin: 1rem; /* Reduced margin for smaller screens */
+    padding: 1.5rem; /* Reduced padding for compact design */
+    min-height: calc(100vh - 4rem); /* Adjusted height to fit screen */
+  }
+
+  .form {
+    width: 90%; /* Let the form fill 90% of the screen width */
+    padding: 1.5rem 2rem; /* Reduced padding */
+    margin: 4rem auto; /* Decreased top margin */
+    gap: 1.5rem; /* Slightly reduced spacing */
+  }
+
+  .row {
+    gap: 0.8rem; /* Adjusted spacing for readability */
+  }
+}
