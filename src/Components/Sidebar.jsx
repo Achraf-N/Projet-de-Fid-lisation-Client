@@ -12,7 +12,7 @@ function Sidebar() {
       <Outlet />
       <Weather />
       <footer className={styles.footer}>
-        &copy; Copyright {new Date().getFullYear()} by WorldWise Inc
+        &copy; Copyright {new Date().getFullYear()} by Ecran Solaire Inc
       </footer>
     </div>
   );

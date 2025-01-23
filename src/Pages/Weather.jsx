@@ -140,7 +140,7 @@ function Weather() {
     <div className={styles.app}>
       <div className={styles.product}>
         <h1 className={styles.header}>
-          Vérifiez votre dosage de crème solaire x
+          Vérifiez votre utilisation de crème solaire.
         </h1>
 
         {/*<User />*/}
@@ -248,7 +248,6 @@ function WeatherDetails({
           if (!res.ok) throw new Error("Failed to fetch weather data");
           const data = await res.json();
 
-          console.log("hhhhhhhhhhh");
           console.log(data);
           setWeatherData(data);
         } catch (err) {
