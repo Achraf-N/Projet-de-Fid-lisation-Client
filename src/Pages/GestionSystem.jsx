@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import styles from "./GestionSystem.module.css";
 import { Table } from "../Components/Table";
-import { Modal } from "../Components/Modals";
+import { Modals } from "../Components/Modals";
 import User from "../components/User";
 
 function GestionSystem() {
@@ -71,7 +71,7 @@ function GestionSystem() {
           Add
         </button>
         {modalOpen && (
-          <Modal
+          <Modals
             closeModal={() => {
               setModalOpen(false);
               setRowToEdit(null);
